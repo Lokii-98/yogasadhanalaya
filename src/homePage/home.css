@@ -1,0 +1,13 @@
+.sectionContainer{
+    height: 665px;
+    border: 1px solid red;
+}
+
+.aboutUs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.yogaImage{
+    width: 100%;
+}
