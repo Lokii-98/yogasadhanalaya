@@ -1,31 +1,59 @@
 .navHeader {
-    font-size: 20px;
-    color: whitesmoke;
-    background-color: darkslategray;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 0px 15px;
+}
+
+.navFont {
+}
+
+.navBg {
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+.navLogo {
+  padding: 10px;
+  margin: 10px;
+}
+
+.navLogo:hover {
+  color: burlywood;
+  cursor: pointer;
+}
+
+.navLI {
+  margin: 0px 40px;
+  font-size: 20px;
+  color: rgb(32, 133, 11) !important;
+}
+.navLI:hover {
+  color: rgb(49, 30, 5) !important;
+  cursor: pointer;
+}
+
+.navUL {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin: 20px 17px;
+  list-style: none;
+}
+
+.logo {
+  height: 45px;
+}
+
+.name {
+  height: 25px;
+}
+.logoSec {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 533px) {
+  .logoContainer {
+    display: none;
   }
-  
-  .navLogo {
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .navLogo:hover {
-    color: burlywood;
-    cursor: pointer;
-  }
-  .navLI:hover {
-    color: burlywood;
-    cursor: pointer;
-  }
-  
-  .navUL {
-    display: flex;
-    width: 35%;
-    justify-content: space-between;
-    padding: 0px 30px;
-    margin: 20px 17px;
-    list-style: none;
-  }
+}

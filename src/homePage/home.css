@@ -1,13 +1,136 @@
-.sectionContainer{
-    height: 665px;
+.sectionContainer {
+  height: 665px;
+  border: 1px solid red;
+}
+
+.containerFluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.yogaImage {
+  width: 100%;
+}
+
+.yogaImageCont {
+  width: 600px;
+  margin: 30px 10px;
+}
+
+.aboutUsPara {
+  text-align: justify;
+  width: 600px;
+  margin: 120px 10px;
+}
+
+.aboutUsHeader {
+  text-align: center;
+}
+
+@media (min-width: 661px) and (max-width: 1070px) {
+  .sectionContainer {
+    height: 600px;
     border: 1px solid red;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .yogaImage {
+    width: 65%;
+  }
+
+  .yogaImageCont {
+    margin: 10px;
+  }
+
+  .aboutUsPara {
+    margin: 10px 25px;
+    width: auto;
+  }
+
+  .aboutUsHeader {
+    text-align: center;
+  }
+
+  .avatar {
+    text-align: center;
+    overflow: visible !important;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
 }
 
-.aboutUs{
-    display: flex;
-    justify-content: space-between;
-}
+@media screen and (max-width: 660px) {
+  .sectionContainer {
+    height: 820px;
+    border: 1px solid red;
+  }
 
-.yogaImage{
+  .aboutUs {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .yogaImage {
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  .yogaImageCont {
+    text-align: center;
     width: 100%;
+    margin: 0px !important;
+  }
+
+  .aboutUsPara {
+    margin: 10px 25px;
+    width: auto;
+  }
+
+  .aboutUsHeader {
+    text-align: center;
+  }
+
+  .avatar {
+    overflow: visible !important;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }

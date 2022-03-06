@@ -2,7 +2,7 @@ import React from "react";
 import "./navBar.css";
 export default function NavBar() {
   return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-light navBg">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -15,28 +15,31 @@ export default function NavBar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand" href="#">
-          Yoga className or Loggo
+        <a className="navbar-brand logoSec" href="#aboutUs">
+          <div>
+            <img alt="logo" src="/assests/Logo.png" className="logo" />
+          </div>
+          <div className="logoContainer">
+            <img alt="name" src="/assests/name.png" className="name" />
+          </div>
         </a>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul className="navbar-nav me-2 mb-2 mb-lg-0">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo03"
+        >
+          <ul className="navbar-nav ">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#home">
+              <a className="nav-link navLI" aria-current="page" href="#aboutUs">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link navLI" href="#Events">
                 Events
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                href="Disabled"
-                tabindex="-1"
-                aria-disabled="false"
-              >
+              <a className="nav-link navLI" href="#contactUs">
                 Contact Us
               </a>
             </li>

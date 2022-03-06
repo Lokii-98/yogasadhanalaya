@@ -1,0 +1,77 @@
+.contactUsSection {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.contactImgContainer {
+  width: 25%;
+  margin: 10px;
+}
+
+.contactImg {
+  width: 100%;
+}
+
+.ctHeader {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.yogaSadhanalaya {
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 100%;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.span {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.para {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.contactIcons {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 753px) {
+  .contactUsSection {
+    flex-direction: column;
+    height: 480px;
+  }
+  .para {
+    margin-left: 15px;
+    text-align: center;
+  }
+}

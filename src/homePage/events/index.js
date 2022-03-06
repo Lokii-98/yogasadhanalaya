@@ -1,9 +1,11 @@
 import React from "react";
-import '../home.css'
+import "../home.css";
 
 const Events = () => {
   return (
-        <section className="sectionContainer">Events</section>
+    <section className="sectionContainer" id="Events">
+      Events
+    </section>
   );
 };
 
